@@ -1,9 +1,9 @@
 var i = 0;
 var images = [];
 
-images[0] = "https://s-media-cache-ak0.pinimg.com/originals/29/55/0c/29550c25dcf3b3add01d7d708e51d6f7.jpg";
-images[1] = "https://s-media-cache-ak0.pinimg.com/originals/07/04/ef/0704ef49843eeb943295f02b03fb735d.jpg";;
-images[2] = "https://s-media-cache-ak0.pinimg.com/originals/46/16/b4/4616b481652f8e57faa9301ee2241d7a.jpg";
+images[0] = "images/slide1.jpg";
+images[1] = "images/slide2.jpg";
+images[2] = "images/slide3.jpg";
 
 function slideshow() {
   document.getElementById('slider').src = images[i];
@@ -31,7 +31,7 @@ function goBack() {
 function goForward() {
   document.getElementById('slider').src = images[i];
 
-  if (i > 0 && i < 3) {
+  if (i < images.length - 1) {
     i++;
     console.log("going forward");
   } else {
