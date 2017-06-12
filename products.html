@@ -4,28 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <script src="javascript/jquery-3.2.1.min.js" defer></script>
+    <script src="javascript/script.js" defer></script>
     <title>Melanina Essentials</title>
   </head>
   <body>
 
-<div id="wrapper">
+  <nav id="navigation">
     <div id="logo">
       <a href="#">
-        <img src="images/logo.png" width="45px" height="auto">
+        <img src="images/logo.png" width="50px" height="auto">
       </a>
       <a href="#">
-        <p>Melanina Essentials</p>
+        <!-- <p id="logo-name">melanina essentials</p> -->
       </a>
     </div> <!-- end of logo div -->
-    <nav id="navigation">
-      <div>
-        <a href="index.html">Link 1</a>
-        <a href="products.html">Link 2</a>
-        <a href="process.html">Link 3</a>
-        <a href="#buy">Link 4</a>
-      </div> <!-- end of div inside of navigation -->
-    </nav>
-    <main id="content" class="content-margin">
+    <div class="nav-container">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="process.html">Our Process</a>
+      <a href="story.html">Our Story</a>
+    </div> <!-- end of nav-container -->
+  </nav> <!-- end of nav -->
+
+    <main id="main-content">
       <h1>Products</h1>
       <div id="products">
         <img src="http://via.placeholder.com/225x225">
@@ -39,11 +41,5 @@
       </div>
     </main>
 
-    <footer id="foot">
-
-    </footer>
-
-  </div> <!-- end of wrapper div -->
-  <script src="javascript/script.js"></script>
   </body>
 </html>
