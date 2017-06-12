@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main-copy.css">
     <title>Melanina Essentials</title>
   </head>
   <body>
-
-<div id="wrapper">
+  <div id="wrapper">
     <div id="logo">
       <a href="#">
         <img src="images/logo.png" width="45px" height="auto">
@@ -26,17 +25,15 @@
       </div> <!-- end of div inside of navigation -->
     </nav>
     <main id="content" class="content-margin">
-      <h1>Products</h1>
-      <div id="products">
-        <img src="http://via.placeholder.com/225x225">
-        <img src="http://via.placeholder.com/225x225">
-        <img src="http://via.placeholder.com/225x225">
-      </div>
-      <div id="products">
-        <img src="http://via.placeholder.com/225x225">
-        <img src="http://via.placeholder.com/225x225">
-        <img src="http://via.placeholder.com/225x225">
-      </div>
+      <img id="slider" width="750px" height="auto">
+      <button type="button" onclick="goBack()" id="back">&larr;</button>
+      <button type="button" onclick="goForward()" id="forward">&rarr;</button>
+      <div class="statement">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Distinctio quisquam quae veniam explicabo hic, sint nihil consectetur quaerat
+          sit voluptate voluptates, tempora doloremque voluptatem. Nulla, deleniti, nostrum?
+          Non voluptatum, debitis!</p>
+      </div> <!-- end of statement div -->
     </main>
 
     <footer id="foot">
