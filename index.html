@@ -7,9 +7,7 @@
     <title>Melanina Essentials</title>
   </head>
   <body>
-
-<div id="wrapper">
-  <div id="container">
+  <div id="wrapper">
     <div id="logo">
       <a href="#">
         <img src="images/logo.png" width="45px" height="auto">
@@ -18,8 +16,15 @@
         <p>Melanina Essentials</p>
       </a>
     </div> <!-- end of logo div -->
-
-    <main id="content">
+    <nav id="navigation">
+      <div>
+        <a href="index.html">Link 1</a>
+        <a href="products.html">Link 2</a>
+        <a href="story.html">Link 3</a>
+        <a href="#buy">Link 4</a>
+      </div> <!-- end of div inside of navigation -->
+    </nav>
+    <main id="content" class="home-margin">
       <img id="slider" width="750px" height="auto">
       <button type="button" onclick="goBack()" id="back">&larr;</button>
       <button type="button" onclick="goForward()" id="forward">&rarr;</button>
@@ -34,16 +39,6 @@
     <footer id="foot">
 
     </footer>
-  </div> <!-- end of container div -->
-
-    <nav id="navigation">
-      <div>
-        <a href="index.html">Link 1</a>
-        <a href="products.html">Link 2</a>
-        <a href="#gallery">Link 3</a>
-        <a href="#buy">Link 4</a>
-      </div> <!-- end of div inside of navigation -->
-    </nav>
 
   </div> <!-- end of wrapper div -->
   <script src="script.js"></script>

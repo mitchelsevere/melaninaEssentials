@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Oswald|Playfair+Display|Stalemate');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Cormorant+Garamond|Oswald|Playfair+Display|Stalemate');
 /*font-family: 'Stalemate', cursive;
-font-family: 'Oswald', sans-serif;
 font-family: 'Merriweather', serif;
 font-family: 'Playfair Display', serif;
-font-family: 'Montserrat', sans-serif;*/
+font-family: 'Cormorant Garamond', serif;*/
 
 
 /* Sitewide layout (Affects every page) */
@@ -17,30 +16,23 @@ html, body {
 #wrapper {
   display: flex;
   margin: 20px auto;
-  max-width: 85%;
-  /*background-color: lightblue;*/
-}
-
-#container {
-  display: flex;
+  max-width: 90%;
   flex-direction: column;
-  margin-left: 100px;
+  justify-content: flex-end;
   overflow: hidden;
+  /*background-color: lightblue;*/
 }
 
 #content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 75%;
-  margin: 50px 0 0 50px;
   overflow: hidden;
 }
 
 #navigation {
   position: fixed;
-  right: 0;
+  left: 175px;
   top: 175px;
   display: flex;
   width: 200px;
@@ -54,6 +46,7 @@ html, body {
 #foot {
   height: 20vh;
   width: 100%;
+  border-top: 1px solid rgba(192, 192, 192, 0.5);
 }
 
 #logo {
@@ -70,21 +63,36 @@ html, body {
   font-size: 40px;
 }
 
-/* Creating a border bottom from 0 opacity to 1 opacity on hover*/
+/* Creating a border bottom from 0 opacity to 1 opacity on hover */
 a {
   border-bottom: 1px solid rgba(192, 192, 192, 0);
   padding: 5px 0 0;
   text-decoration: none;
   color: black;
   transition: border 600ms ease-in;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
 }
 
 a:hover {
   border-bottom: 1px solid rgba(192, 192, 192, 1);
 }
 
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 30px 0 20px 15px;
+}
+
+
 /* Index Page (Home Page) */
+
+.home-margin {
+  margin: 50px 0 60px 300px;
+}
+
 #back {
   width: 50px;
   height: 50px;
@@ -95,7 +103,7 @@ a:hover {
   outline: none;
   border: none;
   position: relative;
-  right: 320px;
+  left: 30px;
   bottom: 280px;
   transition: background 500ms ease-in;
 }
@@ -110,7 +118,7 @@ a:hover {
   outline: none;
   border: none;
   position: relative;
-  left: 320px;
+  left: 670px;
   bottom: 330px;
   transition: background 500ms ease-in;
 }
@@ -120,12 +128,81 @@ a:hover {
 }
 
 /* Product Page */
+
+.product-margin {
+  margin: 50px 0 60px 250px;
+}
+
 #products {
   display: flex;
   justify-content: space-between;
+  margin-left: 15px;
 }
 
 #products img {
   width: 30%;
   margin: 15px 0;
+}
+
+/* Our Story */
+
+#bigdiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#section1 {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+#section2 {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+#section3 {
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.a {
+  height: 300px;
+  width: 60%;
+  background-color: orange;
+  background: url(images/process1.jpg) no-repeat fixed 200px -40px;
+  background-size: auto 100%;
+}
+
+.b {
+  height: 300px;
+  width: 40%;
+  background-color: white;
+}
+
+.c {
+  height: 300px;
+  width: 60%;
+  background-color: orange;
+  background: url(images/process2.jpg) no-repeat fixed 600px -20px;
+  background-size: auto 700px;
+}
+
+.d {
+  height: 300px;
+  width: 60%;
+  background-color: orange;
+  background: url() no-repeat fixed center;
+}
+
+.process-margin {
+  margin: 50px 0 60px 250px;
 }

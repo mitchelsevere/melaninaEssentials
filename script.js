@@ -13,7 +13,7 @@ function slideshow() {
   } else {
     i = 0;
   }
-  var lapse = setTimeout(slideshow, 10000);
+  var lapse = setTimeout(slideshow, 5000);
 }
 
 function goBack() {
