@@ -27,7 +27,7 @@ a {
   margin: 0 auto;
   left: 0;
   right: 0;
-  width: 80%;
+  width: 90%;
   height: 100px;
   background-color: #fff;
   overflow: hidden;
@@ -106,7 +106,21 @@ it can be 100% of the window, not a 100% of the body tag */
   background-size: auto 100%;
   margin: 150px auto;
   z-index: -50;
+  animation: fade 5s infinite;
 }
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 .white {
   width: 100%;
@@ -178,10 +192,23 @@ it can be 100% of the window, not a 100% of the body tag */
   color: #ccc;
 }
 
+.item {
+  display: flex;
+  margin-top: -140px;
+}
+
 .item img {
   width: auto;
   height: 500px;
 }
+
+.black {
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
 /************  Process Page - process.html ************/
 
 .sections {
@@ -240,5 +267,27 @@ it can be 100% of the window, not a 100% of the body tag */
 
 /************  Story Page - story.html ************/
 #video-container {
-  margin: 0 auto;
+  margin: 0 auto 200px;
+}
+
+
+.story1 {
+  height: 400px;
+  width: 60%;
+  background: url(images/process1.jpg) no-repeat scroll center;
+  background-size: cover;
+}
+
+.story2 {
+  height: 400px;
+  width: 60%;
+  background: url(images/process2.jpg) no-repeat scroll center;
+  background-size: cover;
+}
+
+.story3 {
+  height: 400px;
+  width: 60%;
+  background: url(images/process3.jpg) no-repeat scroll center;
+  background-size: auto 100%;
 }
