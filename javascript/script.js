@@ -1,5 +1,7 @@
 $(document).ready(function() { // When the document is ready, run this function
 
+/************ Slideshow Script ***********/
+
     var i = 1; // After the background image loads the image[1] will begin the interval
     var images = []; // Initializing my empty array
     var image = $("#slider"); // Setting the jQuery call of the slider id to the variable image
@@ -24,8 +26,16 @@ $(document).ready(function() { // When the document is ready, run this function
     } // End of if statement
   }, 6000); // End of setInterval
 
-}); // End of document ready function
 
+/************ My version of Modal Window Script ***********/
+
+  $(".products").click(function(){ // Calling the parent element
+          $(this).next().slideDown("slow"); // Targeting the next selector (not nested)
+      });
+  $(".close").click(function(){ // Calling the close selector
+          $(this).parent('.description').slideUp("slow"); // targeting to slide up on the parent
+      });
+}); // End of document ready function
 
 
 
