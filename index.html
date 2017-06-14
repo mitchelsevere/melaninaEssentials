@@ -31,20 +31,24 @@
         </div>
         <a href="story.html">Our Story</a>
         <a href="process.html">Our Process</a>
-        <a id="donate" href="donate.html">Donate</a>
+        <a class="action" href="donate.html">Donate</a>
       </div> <!-- end of nav-container -->
     </nav> <!-- end of nav -->
     <main id="main-content">
       <div id="slider"></div> <!-- slider div -->
-      <div class="white">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="content">
+        <form id="newsletter">
+          <label>Name: </label>
+    			<div class="form-field">
+    				<input id="first" type="text" name="firstName" placeholder="First Name" required>
+    				<input id="last" type="text" name="lastName" placeholder="Last Name" required>
+          </div>
+          <label>Email: </label>
+          <div class="form-field">
+    					<input type="email" name="emailAddress" placeholder="Your Email" required>
+          </div>
+          <button class="action">Subscribe</button>
+        </form> <!-- end of form -->
       </div>
     </main> <!-- end of main content -->
 
@@ -63,7 +67,7 @@
             <li><a href="process.html">Our Process</a></li>
           </ul>
           <ul>
-            <li><a id="donate" href="donate.html">Donate</a></li>
+            <li><a class="action" href="donate.html">Donate</a></li>
           </ul>
       </div>
       <div id="copyright">
