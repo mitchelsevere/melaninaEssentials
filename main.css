@@ -17,6 +17,20 @@ html, body {
 a {
   text-decoration: none;
   color: #000;
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  padding: 7px 10px;
+  margin: 35px 15px 0 0;
+  text-decoration: none;
+  color: #000;
+  transition: border 600ms ease-in;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(192, 192, 192, 1);
 }
 
 /* Creating a border bottom from 0 opacity to 1 opacity on hover */
@@ -27,22 +41,25 @@ a {
   margin: 0 auto;
   left: 0;
   right: 0;
-  width: 90%;
+  width: 100%;
   height: 100px;
   background-color: #fff;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.2);
   z-index: 100;
 }
 
-#logo {
+#logo-container {
   display: flex;
-  margin-left: 20px;
 }
 
-#logo img {
+.logo {
   transition: all 400ms ease-in;
+  margin-left: 80px;
+  margin-top: -10px;
+  cursor: pointer;
 }
 
-#logo img:hover {
+.logo:hover {
   width: 55px;
   height: auto;
   transition: all 400ms ease-in;
@@ -60,27 +77,8 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.nav-container a {
-  border-bottom: 1px solid rgba(192, 192, 192, 0);
-  padding: 10px 10px;
-  margin: 35px 15px 0 0;
-  text-decoration: none;
-  color: #000;
-  transition: border 600ms ease-in;
-  font-family: 'Raleway', sans-serif;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.nav-container a:hover {
-  border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
-
-.nav-container ul {
-  display: block;
+  margin-right: 80px;
+  margin-top: -10px;
 }
 
 .drop {
@@ -88,14 +86,14 @@ a {
 }
 
 .menu {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    width: 200px;
-    padding: 25px 30px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.7);
-    transition: all 500ms ease-in;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 200px;
+  padding: 25px 30px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 500ms ease-in;
 }
 .menu div {
   margin-bottom: 30px;
@@ -135,6 +133,57 @@ a {
   margin: 200px 0 100px;
   text-transform: uppercase;
   letter-spacing: 20px;
+}
+
+#foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 180px;
+  padding-top: 10px;
+  background-color: #fff;
+  border-top: 1px solid rgba(192, 192, 192, 0.2);
+}
+
+#foot-container {
+  display: flex;
+  margin-left: 0px;
+}
+
+#foot-container ul li {
+  list-style: none;
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  padding: 1px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #000;
+  transition: border 600ms ease-in;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+#foot .logo {
+  width: auto;
+  height: 70px;
+  cursor: pointer;
+}
+#copyright {
+  padding: 50px 40px 0 0;
+}
+
+#copyright ul li {
+  text-align: right;
+  list-style-type: none;
+  color: #000;
+  transition: border 600ms ease-in;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 /************  Home Page - index.html ************/
 /* Set position to absolute so when setting the width and height
