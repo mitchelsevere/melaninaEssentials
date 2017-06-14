@@ -65,14 +65,6 @@ a:hover {
   transition: all 400ms ease-in;
 }
 
-#logo-name {
-  font-family: 'Stalemate', cursive;
-  font-size: 40px;
-  margin-top: 35px;
-  padding-left: 15px;
-  border: none;
-}
-
 .nav-container {
   display: flex;
   justify-content: flex-end;
@@ -237,6 +229,13 @@ it can be 100% of the window, not a 100% of the body tag */
 button {
   cursor: pointer;
 }
+
+label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .content p, button {
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
@@ -333,27 +332,11 @@ button {
 }
 
 .quantity {
-  padding: 5px 3px 5px 50px;
+  padding: 10px 3px 10px 50px;
   margin-bottom: 30px;
-}
-
-.cart {
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
+  background-color: rgba(192, 192, 192, 0.1);
+  border: 1px solid #ccc;
   outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 500ms ease-in-out;
-  letter-spacing: 2px;
-  font-size: 16px;
-}
-
-.cart:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
 }
 
 /************  Process Page - process.html ************/
@@ -435,4 +418,24 @@ button {
   width: 60%;
   background: url(images/story3.jpg) no-repeat scroll center;
   background-size: auto 100%;
+}
+
+/************  Contact Page - contact.html ************/
+
+.contact {
+  height: 400px;
+  width: 60%;
+  background: url(images/story3.jpg) no-repeat scroll center;
+  background-size: auto 100%;
+}
+
+.opener {
+  width: 80%;
+  margin: 0 auto 100px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 22px;
+  letter-spacing: 2px;
 }

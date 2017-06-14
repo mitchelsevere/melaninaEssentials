@@ -34,22 +34,53 @@
         <a class="action" href="contact.html">Contact Us</a>
       </div> <!-- end of nav-container -->
     </nav> <!-- end of nav -->
+
     <main id="main-content">
-      <div id="slider"></div> <!-- slider div -->
-      <div class="content">
-        <form id="newsletter">
-          <label>Name: </label>
-    			<div class="form-field">
-    				<input id="first" type="text" name="firstName" placeholder="First Name" required>
-    				<input id="last" type="text" name="lastName" placeholder="Last Name" required>
-          </div>
-          <label>Email: </label>
-          <div class="form-field">
-    					<input type="email" name="emailAddress" placeholder="Your Email" required>
-          </div>
-          <button class="action">Subscribe</button>
-        </form> <!-- end of form -->
-      </div>
+      <h1>Contact Us</h1>
+
+      <p class="opener">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <section class="sections">
+        <div class="contact"></div>
+        <div class="text">
+      		<form id="contact-form">
+      			<div>
+      				<label for="first">First Name: </label>
+      				<input id="first" type="text" name="firstName" placeholder="First Name" required>
+      				<label for="last">Last Name: </label>
+      				<input id="last" type="text" name="lastName" placeholder="Last Name" required>
+      			</div>
+
+      			<div>
+      				<label for="male">Male: </label>
+      				<input id="male" type="radio" name="gender" value="Male" checked>
+      				<label for="female">Female: </label>
+      				<input id="female" type="radio" name="gender" value="Female">
+      				<label for="other">Other: </label>
+      				<input id="other" type="radio" name="gender" value="Other">
+      			</div>
+
+
+      			<div>
+      				<label>
+      					Email:
+      					<input type="email" name="emailAddress" placeholder="Your Email" required>
+      				</label>
+
+      				<label>
+      					Password:
+      					<input type="password" name="password" placeholder="Your Password" pattern=".{5,10}" required title="5 to 10 characters">
+      				</label>
+      			</div>
+
+      			<button>Submit</button>
+      		</form>
+        </div>
+      </section>
     </main> <!-- end of main content -->
 
     <footer id="foot">
