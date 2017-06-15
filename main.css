@@ -106,6 +106,17 @@ a:hover {
     opacity: 1;
 }
 
+.opener {
+  width: 80%;
+  margin: 0 auto 100px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
 .action {
   padding: 10px 20px;
   background-color: black;
@@ -312,7 +323,7 @@ it can be 100% of the window, not a 100% of the body tag */
 
 .item h2 {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 28px;
   letter-spacing: 2px;
 }
@@ -425,7 +436,7 @@ it can be 100% of the window, not a 100% of the body tag */
 .contact {
   height: 400px;
   width: 60%;
-  background: url(images/story3.jpg) no-repeat scroll center;
+  background: url(images/contact.jpeg) no-repeat scroll center;
   background-size: auto 100%;
 }
 
@@ -433,13 +444,9 @@ it can be 100% of the window, not a 100% of the body tag */
   margin-left: 30px;
 }
 
-.opener {
-  width: 80%;
-  margin: 0 auto 100px;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
-  line-height: 22px;
+#contact-form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
   letter-spacing: 2px;
 }
