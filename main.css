@@ -14,6 +14,16 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
+label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -74,7 +84,7 @@ a:hover {
 }
 
 .drop {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .menu {
@@ -84,7 +94,7 @@ a:hover {
   width: 200px;
   padding: 25px 30px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   transition: all 500ms ease-in;
 }
 .menu div {
@@ -127,6 +137,21 @@ a:hover {
   margin: 200px 0 100px;
   text-transform: uppercase;
   letter-spacing: 20px;
+}
+
+.form-field {
+  display: flex;
+  justify-content: center;
+}
+
+.form-field input, textarea, button {
+  padding: 10px;
+  margin: 10px 15px 25px 0;
+  font-size: 15px;
+  background-color: rgba(192, 192, 192, 0.1);
+  border: 1px solid #ccc;
+  outline: none;
+  flex: 1;
 }
 
 #foot {
@@ -209,31 +234,6 @@ it can be 100% of the window, not a 100% of the body tag */
   width: 100%;
   height: 500px;
   background-color: #fff;
-}
-
-.form-field {
-  display: flex;
-  justify-content: center;
-}
-
-.form-field input {
-  padding: 10px;
-  margin: 10px 15px 25px 0;
-  font-size: 18px;
-  background-color: rgba(192, 192, 192, 0.1);
-  border: 1px solid #ccc;
-  outline: none;
-  flex: 1;
-}
-
-button {
-  cursor: pointer;
-}
-
-label {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .content p, button {
@@ -427,6 +427,10 @@ label {
   width: 60%;
   background: url(images/story3.jpg) no-repeat scroll center;
   background-size: auto 100%;
+}
+
+#contact-form {
+  margin-left: 30px;
 }
 
 .opener {
