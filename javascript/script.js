@@ -5,8 +5,11 @@ $(document).ready(function() { // When the document is ready, run this function
   $(".products").click(function(){ // Calling the parent element
           $(this).next().fadeIn(100).slideDown("slow"); // Targeting the next selector (not nested)
       });
+  $(".label").click(function(){ // Calling the parent element
+          $(this).next("section").fadeIn(100).slideDown("slow"); // Targeting the next selector (not nested)
+      });
   $(".close").click(function(){ // Calling the close selector
-          $(this).parent('.description').fadeOut(100).slideUp("slow"); // targeting to slide up on the parent
+          $(this).parent(".description").fadeOut(100).slideUp("slow"); // targeting to slide up on the parent
       });
 }); // End of document ready function
 
@@ -21,7 +24,7 @@ images[2] = "images/slide3.jpg";
 images[3] = "images/slide4.jpg";
 
 function slideshow() {
-  slide.style.backgroundImage = "url(" + images[i] + ")";
+  slide.style.backgroundImage = "url(" + images[i] + ")"; // Grabbing the slider element and assinging the background url to my image array
 
   if (i < images.length - 1) {
     i++;

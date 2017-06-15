@@ -111,7 +111,7 @@ a:hover {
   margin: 0 auto 100px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: lighter;
   line-height: 22px;
   letter-spacing: 2px;
@@ -254,7 +254,7 @@ it can be 100% of the window, not a 100% of the body tag */
   background-color: #fff;
 }
 
-.content p, button {
+ button {
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
   font-weight: lighter;
@@ -291,6 +291,21 @@ it can be 100% of the window, not a 100% of the body tag */
   width: 100%;
   margin: 15px 0;
   cursor: pointer;
+}
+
+.label, .price {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.price {
+  margin-top: -40px;
 }
 
 .description {
