@@ -215,6 +215,13 @@ a:hover {
   line-height: 14px;
   letter-spacing: 2px;
 }
+
+.sections {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 100px;
+  display: flex;
+}
 /************  Home Page - index.html ************/
 /* Set position to absolute so when setting the width and height
 it can be 100% of the window, not a 100% of the body tag */
@@ -352,13 +359,6 @@ it can be 100% of the window, not a 100% of the body tag */
 
 /************  Process Page - process.html ************/
 
-.sections {
-  width: 100%;
-  height: 400px;
-  margin-bottom: 100px;
-  display: flex;
-}
-
 .process1 {
   height: 400px;
   width: 60%;
@@ -385,6 +385,8 @@ it can be 100% of the window, not a 100% of the body tag */
   width: 40%;
   background-color: white;
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .right, .left {
@@ -392,8 +394,8 @@ it can be 100% of the window, not a 100% of the body tag */
   padding: 10px 0 0 40px;
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
-  font-weight: lighter;
-  line-height: 18px;
+  font-weight: normal;
+  line-height: 19px;
   letter-spacing: 2px;
 }
 
